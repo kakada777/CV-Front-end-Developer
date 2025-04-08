@@ -19,16 +19,17 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .logo{
-    font-size: 30px;
+    font-size: 20px;
+    color: white;
     padding: 0px 20px 20px 20px;
 }
 .nav-links {
     display: flex;
     list-style: none;
     padding: 0;
+    margin: auto; /* Center it */
     justify-content: center;
-    flex-grow: 1;
-    margin-left: -100px;
+    flex: 1;
 }
 .nav-links li {
     margin: 0 10px;
@@ -45,7 +46,7 @@ body {
     color: #ffffff;
     border-radius: 5px;
 }
-.menu-icon {
+.menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
@@ -56,16 +57,21 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 50px;
+        top: 60px;
         left: 0;
-        background-color: #333;
+        background-color: #252525;
         text-align: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     }
+
     .nav-links.active {
         display: flex;
     }
-    .menu-icon {
+
+    .menu-toggle {
+        color: #ffffff;
+        margin-top: -15px;
+        font-size: 44px;
         display: block;
     }
 }
@@ -83,6 +89,7 @@ body {
     margin: 0;
 }
 .container-2{
+    width: 65%;
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
@@ -90,6 +97,30 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+@media (max-width: 1200px) {
+    .container-2{
+        width: 90%;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .container-2{
+        width: 100%;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
 }
 .profile{
     width: 50%;
@@ -129,8 +160,8 @@ body {
 }
 @media(max-width: 810px) {
     .profile img {
-        width: 250px;
-        height: 250px;
+        width: 170px;
+        height: 200px;
         border-radius: 10%;
         box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.8), -5px -5px 15px rgba(255, 255, 255, 0.3);
     }
@@ -174,9 +205,8 @@ body {
     padding: 0;
 }
 .about-section {
-    width: 90%;
+    width: 100%;
     padding-top: 5%;
-    padding-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,17 +221,32 @@ body {
     max-width: 900px;
     width: 100%;
 }
-.profile-image{
+.about-image{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.profile-image img {
+.about-image img {
     width: 220px;
     height: 270px;
     border-radius: 10%;
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), -5px -5px 15px rgba(255, 255, 255, 0.3);
+}
+@media(max-width: 810px) {
+    .about-image{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-image img {
+        width: 180px;
+        height: 200px;
+        border-radius: 10%;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    }
+
 }
 .about-text {
     flex: 2;
@@ -233,14 +278,12 @@ body {
     padding: 0;
     text-align: center;
 }
-
 /* Skills Section */
 .skills-section {
     padding: 40px;
     text-align: center;
     background-color: #000000;
 }
-
 .skills-section h2 {
     display: flex;
     align-items: center;
@@ -248,14 +291,12 @@ body {
     font-size: 28px;
     color: gold;
 }
-
 .skills-section .line {
     height: 2px;
     background-color: gold;
     width: 60px;
     margin-left: 10px;
 }
-
 /* Tabs */
 .skills-tabs {
     margin: 20px 0;
@@ -284,8 +325,6 @@ body {
     max-width: 800px;
     margin: auto;
 }
-
-/* Skill Card */
 .skill-card {
     background-color: #1a1a1a;
     padding: 15px;
@@ -312,7 +351,7 @@ body {
 }
 /*experience*/
 .experience{
-    height: 100vh;
+    height: 100%;
     background-color: #121212;
     color: #fff;
     font-family: Arial, sans-serif;
@@ -363,20 +402,20 @@ body {
 }
 /*Contact*/
 .contact{
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000000;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-
 .contact-section {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 40px;
   gap: 40px;
   flex-wrap: wrap;
 }
