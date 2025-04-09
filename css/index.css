@@ -272,6 +272,9 @@ body {
     line-height: 1.6;
     color: #ddd;
 }
+.B{
+    font-size: 15px;
+}
 /*skill*/
 .skill{
     background-color: #6e6e6e;
