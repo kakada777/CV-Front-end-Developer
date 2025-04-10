@@ -11,28 +11,25 @@ body {
 .navbar {
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #0d0d0d;
+    background-color: #ffffff;
     padding: 10px 20px;
     color: rgb(195, 195, 195);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .logo{
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0px 20px 20px 20px;
 }
 .nav-links {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: auto; /* Center it */
     justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: -150px;
     flex: 1;
-}
-.nav-links li {
-    margin: 0 10px;
 }
 .nav-links li a {
     text-decoration: none;
@@ -43,7 +40,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .nav-links li:hover a, .nav-links li a.active {
-    color: #ffffff;
+    color: #000000;
     border-radius: 5px;
 }
 .menu-toggle {
@@ -55,21 +52,23 @@ body {
     .nav-links {
         display: none;
         flex-direction: column;
+        margin-left: 0px;
         width: 100%;
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #252525;
+        background-color: #fbfbfb;
         text-align: center;
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     }
-
     .nav-links.active {
         display: flex;
     }
-
+    .nav-links li {
+        margin-left: -20px;
+    }
     .menu-toggle {
-        color: #ffffff;
+        color: #3e3e3e;
         margin-top: -15px;
         font-size: 44px;
         display: block;
@@ -79,8 +78,7 @@ body {
 /* Main Container */
 .container-1{
     width: 100%;
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -90,7 +88,6 @@ body {
 }
 .container-2{
     width: 65%;
-    color: white;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -101,7 +98,6 @@ body {
 @media (max-width: 1200px) {
     .container-2{
         width: 90%;
-        color: white;
         font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
@@ -113,7 +109,6 @@ body {
 @media (max-width: 768px) {
     .container-2{
         width: 100%;
-        color: white;
         font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
@@ -132,10 +127,9 @@ body {
     width: 380px;
     height: 420px;
     border-radius: 50%;
-    box-shadow: 
-        0 0 30px rgba(255, 255, 255, 0.9), 
-        0 0 60px rgba(255, 255, 255, 0.7), 
-        0 0 100px rgba(255, 255, 255, 0.5);
+    box-shadow:
+      0 0 10px #000000,
+      0 0 40px #080808;
 }
 
 .text-content {
@@ -201,8 +195,7 @@ body {
   }
 /* about */
 .about {
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -217,10 +210,12 @@ body {
 .about-container {
     width: 100%;
     display: flex;
-    background-color: #1a1a1a;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 
+            0 4px 6px rgba(0, 0, 0, 0.05);
     max-width: 900px;
     width: 100%;
 }
@@ -253,6 +248,7 @@ body {
 }
 .about-text {
     flex: 2;
+    color: rgb(0, 0, 0);
     padding-left: 20px;
 }
 .about-text h2 {
@@ -270,7 +266,7 @@ body {
 .about-text p {
     font-size: 14px;
     line-height: 1.6;
-    color: #ddd;
+    color: rgb(0, 0, 0);
 }
 .B{
     font-size: 15px;
@@ -288,7 +284,7 @@ body {
 .skills-section {
     padding: 40px;
     text-align: center;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 .skills-section h2 {
     display: flex;
@@ -299,19 +295,16 @@ body {
 }
 .skills-section .line {
     height: 2px;
-    background-color: gold;
     width: 60px;
     margin-left: 10px;
 }
-/* Tabs */
 .skills-tabs {
     margin: 20px 0;
 }
-
 .skills-tabs .tab {
-    background-color: #1a1a1a;
+    background-color: #fefefe;
     color: gold;
-    border: 1px solid gold;
+    border: 1px solid ;
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -332,34 +325,32 @@ body {
     margin: auto;
 }
 .skill-card {
-    background-color: #1a1a1a;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid gold;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 
+            0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-in-out;
 }
-
 .skill-card:hover {
     transform: scale(1.05);
 }
-
 .skill-card img {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
 }
-
 .skill-card span {
     display: block;
     font-size: 14px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 /*experience*/
 .experience{
     height: 100%;
-    background-color: #121212;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
@@ -368,7 +359,6 @@ body {
 .portfolio {
     max-width: 1000px;
     margin: auto;
-
 }
 .projects {
     display: grid;
@@ -377,10 +367,11 @@ body {
     margin-top: 20px;
 }
 .project-card {
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 
+                 0 4px 6px rgba(0, 0, 0, 0.05);
     cursor: pointer;
     transition: transform 0.2s;
     text-decoration: none;
@@ -398,7 +389,7 @@ body {
 }
 .project-card p {
     font-size: 1em;
-    color: #ccc;
+    color: #7d7d7d;
 }
 .project-card span {
     display: block;
