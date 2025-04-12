@@ -21,18 +21,31 @@
         margin: 20px 0;
     }
     .scroll-btn {
-    width: 40px;
-    height: 45px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
+        width: 40px;
+        height: 45px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 2s;
+     
+    }
+    .scroll-btn:hover{
+        background-color: red;
+        box-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        0 0 20px red,
+        0 0 40px red;
+        transition: 0.3s ease;
+  
     }
     .show {
         display: block;
@@ -194,7 +207,7 @@
                 <input type="email" id="user_email" name="user_email" placeholder="Enter Your Email" required />
                 <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" required />
                 <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
-                <button type="submit">Submit</button>
+                <button class="submit" type="submit">Submit</button>
               </form>
             </div>
           </section>
