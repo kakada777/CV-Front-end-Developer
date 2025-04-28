@@ -1,17 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const scrollBtn = document.getElementById("scrollBtn");
-    
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 100) {
-            scrollBtn.classList.add("show");
-        } else {
-            scrollBtn.classList.remove("show");
-        }
-    });
-    
-    scrollBtn.addEventListener("click", function() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+const scrollBtn = document.getElementById('scrollBtn');
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollBtn.classList.add('show');
+    } else {
+        scrollBtn.classList.remove('show');
+    }
+};
+
+scrollBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 /*Contact */
 document.getElementById("contact-form").addEventListener("submit", function (e) {
