@@ -111,6 +111,11 @@ body {
         display: block;
     }
 }
+.language-toggle img{
+    width:25px;
+    cursor:pointer;
+    margin-right:5px;
+}
 
 /* Main Container */
 .container-1{

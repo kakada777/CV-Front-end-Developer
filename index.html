@@ -1,202 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV-Frontend</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- linkfontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- AOS animate -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV-Frontend</title>
+  
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar sticky-top" >
-        <div class="logo">My CV-Frontend</div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
-        <ul class="nav-links">
-            <li><a href="#home" onclick="setActive(this)">Home</a></li>
-            <li><a href="#about" onclick="setActive(this)">About</a></li>
-            <li><a href="#experience" onclick="setActive(this)">Experience</a></li>
-            <li><a href="#contact" onclick="setActive(this)">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container-1" id="home" data-aos="zoom-in">
-        <div class="container-2">
-            <div class="text-content">
-                <p class="intro">Hello , I'm</p>
-                <h1><b>Po kuchkakada</b></h1>
-                <p><span class="auto-type" ></span></p>
-                <p class="welcome">Welcome to my personal website. 👋</p>
-            </div>
-            <div class="profile">
-                <img src="./img/Untitled-3.jpg" alt="Profile Picture" class="shake-up-down">
-            </div>
-        </div>
-    </div>
-    <div class="about" id="about" data-aos="zoom-in-up">
-        <section class="about-section">
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="./img/Untitled-3.jpg" alt="Profile Image">
-                </div>
-                <div class="about-text">
-                    <h2>About Me <span class="line"></span></h2>
-                    <p>
-                        I'm 22 years old. I'm a reliable and honest worker who's always on time and gets things done. I can handle last-minute changes and work well under pressure. I'm a team player and love helping my team succeed.
-                    </p>
-                    <h2> Education<span class="line"></span></h2>
-                    <p><b>(2021-2025)<br></b>
-                        <b class="B">ROYAL UNIVERSITY OF PHNOM PENH</b> <br>
-                        Bachelor of Computer Science <br>
-                        (2021-2025) (Fourth-year)<br> 
-                        <b>(2023-2024) <br></b>
-                        <b class="B">Enginerring of technology and electronic Center(ETEC Center ) <br></b>
-                        Frontend developer <br>
-                        <b>(2025-Present) <br></b>
-                       <b class="B"> INTERNATIONAL YOUTH FELLOWSHIP<br></b>
-                        Grapic Design <br>
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="skills-section">
-            <h2>Skills <span class="line"></span></h2>
-            
-            <div class="skills-tabs">
-                <button class="tab active">Tech Stack</button>
-            </div>
-    
-                <div class="skills-container">
-                    <div class="skill-card">
-                        <img src="./img/html.png" alt="HTML" style="width: 60px;">
-                        <span>HTML</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./img/css.png" alt="CSS" style="width: 60px;">
-                        <span>CSS</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./img/javascript.png" alt="JavaScript">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./img/bootstrap-logo-shadow.png" alt="Bootstrap" style="width: 60px;">
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./img/tailwind.png" alt="Tailwind">
-                        <span>Tailwind</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./img/reactjs.png" alt="ReactJS">
-                        <span>ReactJS</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./img/images (2).png" alt="UX/UI">
-                        <span>UX/UI</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./img/Graphic-design.png" alt="Graphic-Design">
-                        <span>Graphic-Design</span>
-                    </div>
-                </div>
-        </section>
-    </div>
-    <div class="experience" id="experience" data-aos="zoom-in-up">
-        <section class="portfolio">
-            <b><h1>Past Project Experience</h1></b>
-            <p>Explore the projects I've worked on so far</p>
-            <div class="projects">
-                <a href="https://personal-website.com" class="project-card" target="_blank">
-                    <img src="./img/img-website/CV.png" alt="website CV">
-                    <h2>Website CV</h2>
-                    <p>My CV website</p>
-                    <span>HTML,CSS,JavaScript</span>
-                </a>
-                <a href="https://kakada777.github.io/example-1/" class="project-card" target="_blank">
-                    <img src="./img/img-website/tailwind.jpg" alt="Tailwind">
-                    <h2>Website Tailwind</h2>
-                    <p>A website to make using Tailwind.</p>
-                    <span> Tailwind</span> 
-                </a>
-                <a href="https://kakada777.github.io/kakda-app/" class="project-card" target="_blank">
-                    <img src="./img/img-website/reactjswebsite.png" alt="Bumdesma">
-                    <h2>Website Reactjs</h2>
-                    <p>A web application for village-owned enterprises.</p>
-                    <span>Reactjs </span>
-                </a>
-                <a href="https://kakada777.github.io/lomhat-3/" class="project-card" target="_blank">
-                    <img src="./img/img-website/project-3.png" alt="">
-                    <h2>Website shoes</h2>
-                    <span>HTML,CSS,JavaScript</span>
-                </a>
-                <a href="https://kakada777.github.io/CV-portfolio/" class="project-card" target="_blank">
-                    <img src="./img/img-website/Graphicdesign.jpg" alt="SP2SE">
-                    <h2>Website Portfolio Graphic-Design</h2>
-                    <span>HTML,CSS,JavaScript</span>
-                </a>
-            </div>
-        </section>
-    </div>
-    <div class="contact" data-aos="zoom-in-up">
-        <section class="contact-section" id="contact">
-            <div class="contact-left">
-              <h2>Portfolio</h2>
-              <h3>Let's work together</h3>
-              <p>
-                I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.
-              </p>
-              <p>✉️ kakakda772003@gmail.com</p>
-              <p>📞 096 256 6133</p>
-        
-              <div class="social-icons">
-                <a href="https://www.facebook.com/share/1Xjkifns79/?mibextid=wwXIfr"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
-                <a href="https://t.me/Po_Kuchkakada"><i class="fa-brands fa-telegram"></i> Telegram</a>
-                <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i> Email </a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i> Likin</a>
-              </div>
-            </div>
-        
-            <div class="contact-right">
-              <form id="contact-form">
-                <input type="email" id="user_email" name="user_email" placeholder="Enter Your Email" required />
-                <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" required />
-                <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
-                <button class="submit" type="submit">Submit</button>
-              </form>
-            </div>
-          </section>
-    </div>
-    <button id="scrollBtn" class="scroll-btn">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-    
-<script src="./javascript/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</html>
 
+<body>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top">
+    <div class="logo">My CV-Frontend</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="#home" onclick="setActive(this)">Home</a></li>
+      <li><a href="#about" onclick="setActive(this)">About</a></li>
+      <li><a href="#experience" onclick="setActive(this)">Experience</a></li>
+      <li><a href="#contact" onclick="setActive(this)">Contact</a></li>
+    </ul>
+    <!-- Language Switcher -->
+    <div class="language-toggle">
+      <img src="./img/khmer.png" alt="Khmer" onclick="changeLanguage('kh')" style="width:24px;">
+      <img src="./img/english.png" alt="English" onclick="changeLanguage('en')" style="width:30px;">
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <div class="container-1" id="home" data-aos="zoom-in">
+    <div class="container-2">
+      <div class="text-content">
+        <p class="intro" id="intro">Hello, I'm</p>
+        <h1 id="name"><b>Po Kuchkakada</b></h1>
+        <p><span class="auto-type"></span></p>
+        <p class="welcome" id="welcome">Welcome to my personal website. 👋</p>
+      </div>
+      <div class="profile">
+        <img src="./img/Untitled-3.jpg" alt="Profile Picture" class="shake-up-down">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about" data-aos="zoom-in-up">
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="./img/Untitled-3.jpg" alt="Profile Image">
+        </div>
+        <div class="about-text">
+          <h2 id="aboutMe">About Me <span class="line"></span></h2>
+          <p>
+            I'm 22 years old. I'm a reliable and honest worker who's always on time and gets things done.
+            I can handle last-minute changes and work well under pressure. I'm a team player and love helping my team succeed.
+          </p>
+          <h2 id="education">Education <span class="line"></span></h2>
+          <p><b>(2021-2025)<br></b>
+            <b class="B">ROYAL UNIVERSITY OF PHNOM PENH</b><br>
+            Bachelor of Computer Science (Fourth-year)<br>
+            <b>(2023-2024)</b><br>
+            <b class="B">Engineering of Technology and Electronic Center (ETEC Center)</b><br>
+            Frontend Developer<br>
+            <b>(2025-Present)</b><br>
+            <b class="B">INTERNATIONAL YOUTH FELLOWSHIP</b><br>
+            Graphic Design
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <h2 id="skills">Skills <span class="line"></span></h2>
+      <div class="skills-tabs">
+        <button class="tab active">Tech Stack</button>
+      </div>
+      <div class="skills-container">
+        <!-- Skills Cards -->
+        <div class="skill-card"><img src="./img/html.png" alt="HTML" style="width: 60px;"><span>HTML</span></div>
+        <div class="skill-card"><img src="./img/css.png" alt="CSS" style="width: 60px;"><span>CSS</span></div>
+        <div class="skill-card"><img src="./img/javascript.png" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill-card"><img src="./img/bootstrap-logo-shadow.png" alt="Bootstrap" style="width: 60px;"><span>Bootstrap</span></div>
+        <div class="skill-card"><img src="./img/tailwind.png" alt="Tailwind"><span>Tailwind</span></div>
+        <div class="skill-card"><img src="./img/reactjs.png" alt="ReactJS"><span>ReactJS</span></div>
+        <div class="skill-card"><img src="./img/images (2).png" alt="UX/UI"><span>UX/UI</span></div>
+        <div class="skill-card"><img src="./img/Graphic-design.png" alt="Graphic-Design"><span>Graphic-Design</span></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="experience" id="experience" data-aos="zoom-in-up">
+    <section class="portfolio">
+      <b><h1 id="experienceTitle">Past Project Experience</h1></b>
+      <p id="experienceSubtitle">Explore the projects I've worked on so far</p>
+      <div class="projects">
+        <!-- Project Cards -->
+        <a href="https://personal-website.com" class="project-card" target="_blank">
+          <img src="./img/img-website/CV.png" alt="Website CV">
+          <h2>Website CV</h2>
+          <p>My CV website</p>
+          <span>HTML, CSS, JavaScript</span>
+        </a>
+        <a href="https://kakada777.github.io/example-1/" class="project-card" target="_blank">
+          <img src="./img/img-website/tailwind.jpg" alt="Tailwind">
+          <h2>Website Tailwind</h2>
+          <p>A website made using Tailwind.</p>
+          <span>Tailwind</span>
+        </a>
+        <a href="https://kakada777.github.io/kakda-app/" class="project-card" target="_blank">
+          <img src="./img/img-website/reactjswebsite.png" alt="ReactJS App">
+          <h2>Website ReactJS</h2>
+          <p>Village-owned enterprises web application.</p>
+          <span>ReactJS</span>
+        </a>
+        <a href="https://kakada777.github.io/lomhat-3/" class="project-card" target="_blank">
+          <img src="./img/img-website/project-3.png" alt="Shoe Shop">
+          <h2>Website Shoes</h2>
+          <span>HTML, CSS, JavaScript</span>
+        </a>
+        <a href="https://kakada777.github.io/CV-portfolio/" class="project-card" target="_blank">
+          <img src="./img/img-website/Graphicdesign.jpg" alt="Graphic Design Portfolio">
+          <h2>Portfolio Graphic-Design</h2>
+          <span>HTML, CSS, JavaScript</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact" id="contact" data-aos="zoom-in-up">
+    <section class="contact-section">
+      <div class="contact-left">
+        <h2>Portfolio</h2>
+        <h3 id="contactTitle">Let's work together</h3>
+        <p id="contactDescription">
+          I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.
+        </p>
+        <p>✉️ kakakda772003@gmail.com</p>
+        <p>📞 096 256 6133</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1Xjkifns79/?mibextid=wwXIfr"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+          <a href="https://t.me/Po_Kuchkakada"><i class="fa-brands fa-telegram"></i> Telegram</a>
+          <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form id="contact-form">
+          <input type="email" id="user_email" name="user_email" placeholder="Enter Your Email" required />
+          <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" required />
+          <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
+          <button class="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <button id="scrollBtn" class="scroll-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Section -->
+  <script src="./javascript/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     function setActive(element) {
-            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-            element.classList.add('active');
-        }
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      element.classList.add('active');
+    }
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
 
-    var typed = new Typed(".auto-type",{
-      strings : ["Front-end Developer"],
-      typeSpeed : 150,
-      backSpeed : 150,
-      loop : true 
-    })
-  </script>
-  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Front-end Developer"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    });
+
     AOS.init();
-  </script>
+
+</script>
+
+</body>
+</html>
